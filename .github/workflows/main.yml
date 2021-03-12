@@ -36,5 +36,5 @@ jobs:
         run: |
           rsync -r . ubuntu@ec2-34-245-72-79.eu-west-1.compute.amazonaws.com:.
           ssh -tt ubuntu@ec2-34-245-72-79.eu-west-1.compute.amazonaws.com \
-          "docker-compose -f ./docker-compose.twitterFan.yml down && \
-          docker-compose -f ./docker-compose.ye.yml up --build -d"
+          "docker-compose -f ./docker-compose.yml down && \
+          docker-compose -f ./docker-compose.yml up --build -d"
